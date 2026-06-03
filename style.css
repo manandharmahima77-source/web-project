@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1e1b4b,#312e81);
+    color:white;
+    transition:0.4s;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#1a1440;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ec4899;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#ec4899;
+}
+
+button{
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    background:#ec4899;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#db2777;
+    transform:scale(1.05);
+}
+
+section{
+    padding:70px 10%;
+    max-width:1200px;
+    margin:auto;
+    scroll-margin-top:90px;
+}
+
+.hero{
+    text-align:center;
+}
+
+.profile-pic{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #ec4899;
+    box-shadow:0 0 25px #ec4899;
+}
+
+.hero h1{
+    margin-top:25px;
+    font-size:50px;
+}
+
+.hero h2{
+    color:#ec4899;
+    margin-top:10px;
+}
+
+.hero p{
+    margin-top:15px;
+}
+
+.container{
+    background:rgba(255,255,255,0.08);
+    padding:40px;
+    border-radius:20px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#ec4899;
+}
+
+/* OLD CARDS (kept but not used) */
+.cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:#4338ca;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    margin:15px 0;
+    color:#ec4899;
+}
+
+.card p{
+    padding:0 15px 20px;
+    text-align:center;
+}
+
+/* ✅ NEW SLIDER */
+.slider{
+    text-align:center;
+}
+
+.slider img{
+    width:320px;
+    height:350px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.slider h3{
+    margin-top:15px;
+    color:#ec4899;
+}
+
+.slider p{
+    margin-top:10px;
+}
+
+.buttons{
+    margin-top:15px;
+}
+
+/* CONTACT */
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#1a1440;
+    text-align:center;
+    padding:20px;
+}
+
+/* LIGHT MODE */
+.light-mode{
+    background:#f5f5f5;
+    color:#222;
+}
+
+.light-mode header{
+    background:white;
+}
+
+.light-mode footer{
+    background:white;
+}
+
+.light-mode .card{
+    background:white;
+    color:black;
+}
+
+.light-mode nav ul li a{
+    color:black;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.card{
+    width:100%;
+}
+
+.slider img{
+    width:100%;
+    height:auto;
+}
+
+}
